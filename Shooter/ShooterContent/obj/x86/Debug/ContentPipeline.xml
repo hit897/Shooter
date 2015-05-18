@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mine.xnb</Output>
-      <Time>2015-05-08T11:45:30.8071493-06:00</Time>
+      <Time>2015-05-14T12:19:18.999505-06:00</Time>
     </Item>
     <Item>
       <Source>mineAnimation.png</Source>
@@ -146,6 +146,24 @@
       <Options>None</Options>
       <Output>C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\bin\x86\Debug\Content\gameFont.xnb</Output>
       <Time>2015-05-08T11:45:30.6511493-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Copy of mine.png</Source>
+      <Name>Copy of mine</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Copy of mine.xnb</Output>
+      <Time>2015-05-14T12:08:22.6522705-06:00</Time>
+    </Item>
+    <Item>
+      <Source>mine2.png</Source>
+      <Name>mine2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mine2.xnb</Output>
+      <Time>2015-05-14T12:19:56.3671056-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

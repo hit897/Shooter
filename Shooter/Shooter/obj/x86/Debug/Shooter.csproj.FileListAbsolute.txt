@@ -22,3 +22,5 @@ C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.
 C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
 C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb
+C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Copy of mine.xnb
+C:\Users\bhic8572\Desktop\Shooter\Shooter\Shooter\Shooter\bin\x86\Debug\Content\mine2.xnb

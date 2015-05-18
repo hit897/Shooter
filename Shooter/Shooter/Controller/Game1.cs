@@ -54,12 +54,18 @@ namespace Shooter
         Texture2D projectileTexture;
         List<projectile> projectiles;
 
+        Texture2D projectileTexture2;
+        List<projectile> projectiles2;
+
         // The rate of fire of the player laser
         TimeSpan fireTime;
         TimeSpan previousFireTime;
 
         TimeSpan fireTime2;
         TimeSpan previousFireTime2;
+
+        TimeSpan catFireTime;
+        TimeSpan previousCatFireTime;
 
         Texture2D explosionTexture;
         List<Animation> explosions;
@@ -107,7 +113,8 @@ namespace Shooter
 
             // Set the laser to fire every quarter second
             fireTime = TimeSpan.FromSeconds(.5f);
-            fireTime2 = TimeSpan.FromSeconds(0.05f);
+            fireTime2 = TimeSpan.FromSeconds(.05f);
+            catFireTime = TimeSpan.FromSeconds(1f);
 
             base.Initialize();
         }
@@ -129,6 +136,7 @@ namespace Shooter
 
             // Load the projectile texture
             projectileTexture = Content.Load<Texture2D>("laser");
+            projectileTexture2 = Content.Load<Texture2D>("Mine2");
 
             // Load the enemy's texture.
             enemyTexture = Content.Load<Texture2D>("mineAnimation");
@@ -275,6 +283,12 @@ namespace Shooter
             projectile.Initialize(GraphicsDevice.Viewport, projectileTexture, position);
             projectiles.Add(projectile);
         }
+        private void AddProjectile2(Vector2 position)
+        {
+            projectile projectile = new projectile();
+            projectile.Initialize(GraphicsDevice.Viewport, projectileTexture2, position);
+            projectiles.Add(projectile);
+        }
 
         private void AddEnemy()
         {
@@ -379,15 +393,15 @@ namespace Shooter
                     AddProjectile(player.Position + new Vector2(player.Width / 2, 0));
                 }
             }
-            if (gameTime.TotalGameTime - previousFireTime2 > fireTime2)
+            if (gameTime.TotalGameTime - previousCatFireTime > catFireTime)
             {
                 if (currentKeyboardState.IsKeyDown(Keys.LeftShift))
                 {
                     // Reset our current time
-                    previousFireTime2 = gameTime.TotalGameTime;
+                    previousCatFireTime = gameTime.TotalGameTime;
 
                     // Add the projectile, but add it to the front and center of the player
-                    AddProjectile(player.Position + new Vector2(player.Width / 2, 0));
+                    AddProjectile2(player.Position + new Vector2(player.Width / 2, 0));
                 }
             }
             if (gameTime.TotalGameTime - previousFireTime2 > fireTime2)
